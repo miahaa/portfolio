@@ -124,7 +124,7 @@
     .btn-line { background: transparent; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.18); }
     .btn-line:hover { border-color: var(--pink); color: var(--pink); }
 
-    /* Hero right — stacked gifs */
+    /* Hero right — project visuals */
     .hero-right {
       display: flex;
       flex-direction: column;
@@ -233,7 +233,7 @@
     }
     .about-body p strong { color: var(--ink); font-weight: 500; }
 
-    /* gif inside about */
+    /* project visual inside about */
     .about-gif-wrap {
       position: relative;
       padding-top: 2rem;
@@ -546,14 +546,23 @@
       margin: 0 auto 3rem;
       line-height: 1.8;
     }
-    .contact-gif {
+    .contact-monogram {
       width: 120px; height: 120px;
       border-radius: 50%;
-      overflow: hidden;
       margin: 0 auto 2.5rem;
       border: 2px solid var(--pink);
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(247,37,133,0.22), transparent 42%),
+        linear-gradient(135deg, #17172b, #0d0d17);
+      color: var(--white);
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 2.6rem;
+      letter-spacing: -1px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.22);
     }
-    .contact-gif img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .contact-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.8rem; }
     .clink {
       display: inline-flex; align-items: center; gap: 0.5rem;
@@ -638,23 +647,21 @@
   </div>
 
   <div class="hero-right">
-    <!-- fashion gif -->
     <div class="gif-frame gif-frame-1">
       <img
-        src="https://media.giphy.com/media/l0MYRzcWP7cjfNQ2I/giphy.gif"
-        alt="aesthetic fashion gif"
-        loading="lazy"
+        src="https://raw.githubusercontent.com/miahaa/portfolio-risk-lab/main/images/portfolio_optimization.png"
+        alt="Portfolio optimization chart from Mia Ha's Portfolio Risk and Analytics Lab"
+        loading="eager"
       />
-      <span class="gif-label">Finance</span>
+      <span class="gif-label">Portfolio optimization</span>
     </div>
-    <!-- sparkle / cosmetics gif -->
     <div class="gif-frame gif-frame-2">
       <img
-        src="https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif"
-        alt="sparkle gif"
-        loading="lazy"
+        src="https://raw.githubusercontent.com/miahaa/portfolio-risk-lab/main/images/portfolio_growth.png"
+        alt="Portfolio growth chart from Mia Ha's Portfolio Risk and Analytics Lab"
+        loading="eager"
       />
-      <span class="gif-label">Technology</span>
+      <span class="gif-label">Risk analytics</span>
     </div>
   </div>
 
@@ -698,15 +705,15 @@
     <div class="about-gif-wrap">
       <div class="about-gif-main">
         <img
-          src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"
-          alt="aesthetic pink cosmetics gif"
+          src="https://raw.githubusercontent.com/miahaa/portfolio-risk-lab/main/images/correlation_matrix.png"
+          alt="Asset correlation matrix from Mia Ha's portfolio analytics project"
           loading="lazy"
         />
       </div>
       <div class="about-gif-float">
         <img
-          src="https://media.giphy.com/media/26BRzozg4TCBXv6QU/giphy.gif"
-          alt="stock chart gif"
+          src="https://raw.githubusercontent.com/miahaa/portfolio-risk-lab/main/images/portfolio_drawdown.png"
+          alt="Portfolio drawdown analysis from Mia Ha's portfolio analytics project"
           loading="lazy"
         />
       </div>
@@ -740,8 +747,8 @@
     <div>
       <div class="skills-gif">
         <img
-          src="https://media.giphy.com/media/l3vRoDA9TYx7FpXpS/giphy.gif"
-          alt="fashion runway gif"
+          src="https://raw.githubusercontent.com/miahaa/portfolio-risk-lab/main/images/portfolio_vs_sp500.png"
+          alt="Portfolio versus S&P 500 performance chart"
           loading="lazy"
         />
       </div>
@@ -903,8 +910,8 @@
   <div class="edu-wrap">
     <div class="edu-gif">
       <img
-        src="https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif"
-        alt="aesthetic study gif"
+        src="https://raw.githubusercontent.com/miahaa/portfolio-risk-lab/main/images/portfolio_optimization.png"
+        alt="Quantitative portfolio optimization visualization"
         loading="lazy"
       />
     </div>
@@ -928,13 +935,7 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-gif">
-    <img
-      src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif"
-      alt="wave gif"
-      loading="lazy"
-    />
-  </div>
+  <div class="contact-monogram" aria-label="Mia Ha">MH</div>
   <p class="section-eyebrow" style="justify-content:center;display:flex;margin-bottom:1rem;">Say hello</p>
   <h2 style="color:var(--white);">Let's work <i style="color:var(--pink);">together.</i></h2>
   <p class="contact-sub">
